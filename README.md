@@ -1,1 +1,6 @@
-# AllWorkingModels
+# AllWorkingModels![p1](https://user-images.githubusercontent.com/62325742/192713427-0f62813c-fe1c-4398-8fd0-1b1e2eb6f21b.PNG)
+![p2](https://user-images.githubusercontent.com/62325742/192713466-13b28119-b6a0-4426-8c4b-6db5d39dbe89.PNG)
+![p3](https://user-images.githubusercontent.com/62325742/192713544-084edc23-98a3-4d3c-98d6-a722899ba5c7.PNG)
+![p4](https://user-images.githubusercontent.com/62325742/192713575-d78d9be9-200c-438f-a4c4-42912092bf8e.PNG)
+![p5](https://user-images.githubusercontent.com/62325742/192713590-0272b164-c558-458c-b4cd-ac0460c5939c.PNG)
+![p6](https://user-images.githubusercontent.com/62325742/192713599-4dbd2e7c-fef3-486d-9fe0-974ea0e00952.PNG)
