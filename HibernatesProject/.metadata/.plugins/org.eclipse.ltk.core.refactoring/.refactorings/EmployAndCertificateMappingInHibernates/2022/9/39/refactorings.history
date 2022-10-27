@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EmployAndCertificateMappingInHibernates/src/main/resources/Employee.hbm.xml.cfg.xml&apos; to &apos;Employee.hbm.xml&apos;" description="Rename resource &apos;Employee.hbm.xml.cfg.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/Employee.hbm.xml.cfg.xml" name="Employee.hbm.xml" stamp="1663925559799" updateReferences="true"/>
+</session>

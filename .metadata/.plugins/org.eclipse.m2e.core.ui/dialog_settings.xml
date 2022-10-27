@@ -25,13 +25,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.java.jsf"/>
+			<item value="com.java.boot"/>
 			<item value="com.java.jsp"/>
+			<item value="com.crud.js"/>
 		</list>
 		<list key="groupId">
-			<item value="PasswordManager"/>
+			<item value="Infinite"/>
 		</list>
 		<list key="artifactId">
-			<item value="PasswordManagerApp"/>
+			<item value="JSFPracticeUsingJavaAndDatabaseOfEmploy"/>
+			<item value="RestAPIUsingHibernatesAndSpringBoot"/>
+			<item value="CodeSnippetSystemUsingJSPAndSQLAndHTMLAndJS"/>
+			<item value="CRUDOperationaUsingJS"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

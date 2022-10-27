@@ -41,7 +41,7 @@
 </head>
 <body>
  <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a href="#" class="navbar-brand"> <img src="img/icons.jpg" width="250px" height="150px"></a>
+            <a href="#" class="navbar-brand"> <img src="img/addPassImg.jpg" width="250px" height="150px"></a>
             <div style="border-radius: 12px;color: red;" align="center">
               <h1>
                 <b style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restore Privacy App</b><br>

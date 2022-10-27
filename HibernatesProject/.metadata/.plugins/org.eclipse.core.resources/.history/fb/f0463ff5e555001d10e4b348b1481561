@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<jsp:useBean id="u" class="com.java.jsf.User"/>
+<jsp:setProperty property="*" name="u"/>
+<hr>
+Records Are :
+
+<jsp:getProperty property="name" name="u"/><br>
+<jsp:getProperty property="password" name="u"/>
+<jsp:getProperty property="email" name="u"/>
+
+
+</body>
+</html>

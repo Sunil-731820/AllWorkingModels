@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/EmployAndCertificateMappingInHibernates/src/main/resources/Employee.hbm.xml">
+ <TreeFormPage>
+  <Memento type="HibConfig3SessionFactory">
+   <Memento type="Session Factory"/>
+   <Memento type="Properties"/>
+   <Memento type="Mappings"/>
+  </Memento>
+  <Memento type="">
+   <Memento type="Properties Editor"/>
+  </Memento>
+  <Memento type="FileHibernate3">
+   <Memento collapsed="false" type="File Hibernate 3.0"/>
+   <Memento collapsed="false" type="Advanced"/>
+   <Memento collapsed="false" type="Meta"/>
+   <Memento collapsed="false" type="Types"/>
+   <Memento collapsed="false" type="Imports"/>
+   <Memento collapsed="false" type="Classes"/>
+   <Memento collapsed="false" type="Queries"/>
+   <Memento collapsed="false" type="Filters"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

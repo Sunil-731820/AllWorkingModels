@@ -29,5 +29,22 @@ public class RestoreDAO {
 		return question;
 		
 	}
+	
+	public String AddQuestion(RestorePasswordId questions) throws ClassNotFoundException, SQLException {
+		connection = ConnectionHelper.getConnection();
+		int counter = 0;
+		String cmd = "insert into restorepassword(id , nickName , schoolName,petName,favSports,favIdeal)"+
+				" values (?,?,?,?,?,?)";
+		pst = connection.prepareStatement(cmd);
+		pst.setInt(1,questions.getId());
+		pst.setString(2, questions.getNickName());
+		pst.setString(3, questions.getSchoolName());
+		pst.setString(4, questions.getPetName());
+		pst.setString(5, questions.getFavSports());
+		pst.setString(6, questions.getFavIdeal());
+		pst.executeUpdate();
+		return "Restores Addess SuccessFully";
+	}
+	
 
 }

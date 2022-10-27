@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:useBean id="u" class="com.java.jsf.User" scope="request"/>
+<jsp:setProperty property="*" name="u"/>
+<%
+out.println("I am calling second Visit Page");
+%>
+Same Records Are getting from Previous <br>
+Name Is : <jsp:getProperty property="name" name="u"/><br>
+Password Is : <jsp:getProperty property="password" name="u"/><br>
+EMail Is : <jsp:getProperty property="email" name="u"/>
+
+
+</body>
+</html>

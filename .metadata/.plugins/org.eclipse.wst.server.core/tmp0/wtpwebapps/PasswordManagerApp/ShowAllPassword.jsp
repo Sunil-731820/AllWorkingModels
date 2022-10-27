@@ -1,3 +1,4 @@
+<%@page import="com.java.jsp.RestoreDAO"%>
 <%@page import="com.java.jsp.Questions"%>
 <%@page import="com.java.jsp.QuestionDAO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -46,11 +47,15 @@
     </style>
 </head>
 <body>
+<%
+	RestoreDAO dao = new RestoreDAO();
+	
 
+%>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a href="#" class="navbar-brand"> <img src="img/icons.jpg"
-                                                   height="30" width="100" alt="Password">
+            <a href="#" class="navbar-brand"> <img src="img/addPassImg.jpg"
+                                                   height="45" width="100" alt="Password">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse"
                     data-target="#navbarCollapse">

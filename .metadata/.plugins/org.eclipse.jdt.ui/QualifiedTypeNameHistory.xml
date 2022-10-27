@@ -16,9 +16,23 @@
     <fullyQualifiedTypeName name="com.java.jsp.DecryptionOfPinCode"/>
     <fullyQualifiedTypeName name="com.java.jsp.EncrptionOfPinCode"/>
     <fullyQualifiedTypeName name="com.java.jsp.AddPassword"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.java.jsp.Questions"/>
     <fullyQualifiedTypeName name="com.java.jsp.ConnectionHelper"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.NameList"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.AssertFalse.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.java.jsp.Questions"/>
+    <fullyQualifiedTypeName name="com.java.jsp.RestorePasswordId"/>
+    <fullyQualifiedTypeName name="com.java.jsp.Question"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.java.jsp.CodeForPasting"/>
+    <fullyQualifiedTypeName name="com.crud.js.CalculationForTesting"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.AssertTrue"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="org.junit.After"/>
+    <fullyQualifiedTypeName name="org.junit.AfterClass"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 </qualifiedTypeNameHistroy>

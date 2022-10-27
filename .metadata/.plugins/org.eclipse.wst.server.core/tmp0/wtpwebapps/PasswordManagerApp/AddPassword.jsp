@@ -6,6 +6,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>   
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").slideToggle("slow");  
+    });  
+});  
+</script>  
+ <style>   
+#flip {  
+     
+    text-align: center;  
+    background-color: #00FFFF;  
+    border: solid 1px #c3c3c3;  
+}  
+#panel {  
+     
+    display:none;  
+}  
+</style>  
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -40,7 +60,20 @@
             color: white;
             text-align: center;
         }
+        
+        
     </style>
+    
+   <script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 </head>
 <body>
 <%
@@ -48,6 +81,7 @@
 	EncrptionOfPinCode erc1 = new EncrptionOfPinCode(); 
 
 %>
+<div id="flip">Click To Add Password Safely</div>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a href="#" class="navbar-brand"> 
             </a>
@@ -67,6 +101,8 @@
                 <b> Restore Privacy App </b>
             </h1>
         </div>
+        
+        <div id="panel">
         <!-- Sing in  Form -->
         <form action="AddPassword.jsp" method="get">
             <section class="sign-in">
@@ -91,9 +127,12 @@
                                
                                 <div class="form-group">
                                     <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="AddPassword" id="your_name" placeholder=" Enter Password  " required="required"/>
-                                </div>
-                           
+                                    <input type="password" name="AddPassword" id="myInput"  placeholder=" Enter Password  " required="required"/>
+								<hr> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								 <input type="checkbox" name="" onclick="myFunction()">Show Password
+								 
+								 </div>
+
                                 <div class="form-group form-button">
                                     <input type="submit" name="signin" id="signin" class="form-submit" value="Add"/>
                                 </div>
@@ -103,7 +142,7 @@
                 </div>
             </section>
         </form>
-        
+        </div>
         <%
         	if(request.getParameter("AddPassword")!=null || request.getParameter("normal")!=null){
         		AddPassword add = new AddPassword();
