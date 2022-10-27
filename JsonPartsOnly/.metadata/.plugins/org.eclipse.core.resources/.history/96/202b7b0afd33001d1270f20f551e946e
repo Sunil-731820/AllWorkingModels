@@ -1,0 +1,11 @@
+package com.java.json;
+
+import org.json.simple.JSONArray;
+
+public class JsonFromCDT {
+    public static void main(String[] args) {
+        System.out.println("this is the example of the json from cdt");
+        JSONArray ja = CDL.rowToJSONArray(new JSONTokener("England, USA, Canada"));
+    }
+
+}

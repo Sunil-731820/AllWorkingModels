@@ -1,0 +1,19 @@
+package com.java.ds;
+
+public class VoidReturn {
+	
+	public  static void  hello() {
+		System.out.println("hello I am returning void values ");
+		
+	}
+	
+	public static int number() {
+		return 100;
+	}
+	public static void main(String[] args) {
+		hello();
+		int num = number();
+		System.out.println("the Return number is "+ num);
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.java.ds;
+
+public class VoidReturn {
+	
+	public  static void  hello() {
+		System.out.println("hello I am returning void values ");
+		
+	}
+	
+	public static int number() {
+		return 100;
+	}
+	
+	public static String Name() {
+		return "Abhishek ";
+	}
+	
+	
+	public static double doublevalue() {
+		return 12.12;
+	}
+	public static void main(String[] args) {
+		hello();
+		int num = number();
+		System.out.println("the Return number is "+ num);
+		
+		String name = Name();
+		System.out.println("The Name is "+ name);
+		
+		double decimal = doublevalue();
+		System.out.println("the double values is "+ decimal);
+	}
+
+}

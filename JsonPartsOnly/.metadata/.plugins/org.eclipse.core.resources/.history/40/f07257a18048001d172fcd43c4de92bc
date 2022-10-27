@@ -1,0 +1,39 @@
+package com.java.json;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Employee implements Serializable{
+	private int id;
+    private String firstName;
+    private String lastName;
+    private double salary;
+    private double premium;
+	public Employee(int id, String firstName, String lastName, double salary, double premium) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+		this.premium = premium;
+	}
+    
+    
+	
+}
+
+public class SerilizationOfEmployeeData {
+	public static void main(String[] args) throws IOException {
+		String fileName = "C:\\Users\\sunilg\\Desktop\\FileRelatedParts\\SerilizationOfEmployeeData.txt";
+		FileOutputStream fout = new FileOutputStream(fileName);
+		Employee emp1 = new Employee(1, "Sunil","kumar",122920.0,12000);
+		ObjectOutputStream out = new ObjectOutputStream(fout);
+		out.writeObject(emp1);
+		System.out.println("Data Serilised SuccessFuly");
+		
+	}
+
+}

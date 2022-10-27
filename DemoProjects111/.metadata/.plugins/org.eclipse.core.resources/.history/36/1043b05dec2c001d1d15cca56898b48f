@@ -1,0 +1,14 @@
+package com.java.ds;
+
+public class VoidReturn {
+	
+	public  static void  hello() {
+		System.out.println("hello I am returning void values ");
+		
+	}
+	public static void main(String[] args) {
+		hello();
+		
+	}
+
+}

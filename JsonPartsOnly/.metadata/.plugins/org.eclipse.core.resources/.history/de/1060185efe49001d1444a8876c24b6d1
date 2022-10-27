@@ -1,0 +1,128 @@
+package TaskAssignByMeForSerilizationAndDeserilization;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+class Manager implements Serializable{
+	private int managerId;
+	private String managerFirstName;
+	private String managerLastName;
+	private String managerAddress;
+	private String managerPincode;
+	public Manager(int managerId, String managerFirstName, String managerLastName, String managerAddress,
+			String managerPincode) {
+		super();
+		this.managerId = managerId;
+		this.managerFirstName = managerFirstName;
+		this.managerLastName = managerLastName;
+		this.managerAddress = managerAddress;
+		this.managerPincode = managerPincode;
+	}
+	@Override
+	public String toString() {
+		return "Manager [managerId=" + managerId + ", managerFirstName=" + managerFirstName + ", managerLastName="
+				+ managerLastName + ", managerAddress=" + managerAddress + ", managerPincode=" + managerPincode + "]";
+	}
+	
+}
+
+class Student implements Serializable{
+	private int studentId;
+	private String studentFirstName;
+	private String studentLastName;
+	private String studentAddress;
+	private String studentPincode;
+	public Student(int studentId, String studentFirstName, String studentLastName, String studentAddress,
+			String studentPincode) {
+		super();
+		this.studentId = studentId;
+		this.studentFirstName = studentFirstName;
+		this.studentLastName = studentLastName;
+		this.studentAddress = studentAddress;
+		this.studentPincode = studentPincode;
+	}
+	@Override
+	public String toString() {
+		return "Student [studentId=" + studentId + ", studentFirstName=" + studentFirstName + ", studentLastName="
+				+ studentLastName + ", studentAddress=" + studentAddress + ", studentPincode=" + studentPincode + "]";
+	}
+	
+	
+}
+
+class Employ implements Serializable{
+	private int employId;
+	private String employFirstName;
+	private String employLastName;
+	private String employAddress;
+	private String employPincode;
+	public Employ(int employId, String employFirstName, String employLastName, String employAddress,
+			String employPincode) {
+		super();
+		this.employId = employId;
+		this.employFirstName = employFirstName;
+		this.employLastName = employLastName;
+		this.employAddress = employAddress;
+		this.employPincode = employPincode;
+	}
+	@Override
+	public String toString() {
+		return "Employ [employId=" + employId + ", employFirstName=" + employFirstName + ", employLastName="
+				+ employLastName + ", employAddress=" + employAddress + ", employPincode=" + employPincode + "]";
+	}
+	
+	
+}
+
+class Admin implements Serializable{
+	private int adminId;
+	private String adminFirstName;
+	private String adminLastName;
+	private String adminAddress;
+	private String adminPincode;
+	public Admin(int adminId, String adminFirstName, String adminLastName, String adminAddress, String adminPincode) {
+		super();
+		this.adminId = adminId;
+		this.adminFirstName = adminFirstName;
+		this.adminLastName = adminLastName;
+		this.adminAddress = adminAddress;
+		this.adminPincode = adminPincode;
+	}
+	@Override
+	public String toString() {
+		return "Admin [adminId=" + adminId + ", adminFirstName=" + adminFirstName + ", adminLastName=" + adminLastName
+				+ ", adminAddress=" + adminAddress + ", adminPincode=" + adminPincode + "]";
+	}
+	
+	
+}
+
+public class TaskSolutionGivenByMe {
+	public static void main(String[] args) {
+		List<Manager> managerList = new ArrayList<Manager>();
+		List<Student> studentList = new ArrayList<Student>();
+		List<Employ> employList = new ArrayList<Employ>();
+		List<Admin> adminList = new ArrayList<Admin>();
+//		The Manager Data Here 
+		managerList.add(new Manager(1, "Muarari", "Singh", "Bangalore", "220090"));
+		managerList.add(new Manager(2, "Muarari", "Singh", "Bangalore", "220090"));
+		managerList.add(new Manager(3, "Muarari", "Singh", "Bangalore", "220090"));
+		managerList.add(new Manager(4, "Muarari", "Singh", "Bangalore", "220090"));
+		managerList.add(new Manager(5, "Muarari", "Singh", "Bangalore", "220090"));
+		System.out.println("the Manager List is ");
+		System.out.println(managerList);
+		
+//		The Student Data Here
+		studentList.add(new Student(1, "Harish", "kUmar", "Lucknow", "228080"));
+		studentList.add(new Student(2, "Harish", "kUmar", "Lucknow", "228080"));
+		studentList.add(new Student(3, "Harish", "kUmar", "Lucknow", "228080"));
+		studentList.add(new Student(4, "Harish", "kUmar", "Lucknow", "228080"));
+		studentList.add(new Student(5, "Harish", "kUmar", "Lucknow", "228080"));
+		System.out.println("The Student list is ");
+		System.out.println(studentList);
+		
+		
+	}
+
+}

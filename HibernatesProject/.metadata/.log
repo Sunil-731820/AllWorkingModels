@@ -8191,3 +8191,6 @@ Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache
 	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)
 	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1050)
 	... 46 more
+
+!ENTRY org.eclipse.ui 2 2 2022-10-27 18:08:38.131
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

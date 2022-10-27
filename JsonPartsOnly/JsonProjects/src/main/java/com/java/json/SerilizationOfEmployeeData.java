@@ -1,0 +1,120 @@
+package com.java.json;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Employee implements Serializable{
+	int id;
+    String firstName;
+    String lastName;
+    double salary;
+    double premium;
+	public Employee(int id, String firstName, String lastName, double salary, double premium) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+		this.premium = premium;
+	}
+    
+    
+	
+}
+
+public class SerilizationOfEmployeeData {
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		String fileName = "C:\\Users\\sunilg\\Desktop\\FileRelatedParts\\SerilizationOfEmployeeData.txt";
+		FileOutputStream fout = new FileOutputStream(fileName);
+		Employee emp1 = new Employee(1, "Sunil","kumar",122920.0,12000);
+		ObjectOutputStream out = new ObjectOutputStream(fout);
+		out.writeObject(emp1);
+		Employee emp2 = new Employee(2, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp2);
+		Employee emp3 = new Employee(3, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp3);
+		Employee emp4 = new Employee(4, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp4);
+		Employee emp5 = new Employee(5, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp5);
+		Employee emp6 = new Employee(6, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp6);
+		Employee emp7 = new Employee(7, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp7);
+		Employee emp8 = new Employee(8, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp8);
+		Employee emp9 = new Employee(9, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp9);
+		Employee emp10 = new Employee(10, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp10);
+		Employee emp11 = new Employee(11, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp11);
+		Employee emp12 = new Employee(12, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp12);
+		Employee emp13 = new Employee(13, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp13);
+		Employee emp14 = new Employee(14, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp14);
+		Employee emp15 = new Employee(15, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp15);
+		Employee emp16 = new Employee(16, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp16);
+		Employee emp17 = new Employee(17, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp17);
+		Employee emp18 = new Employee(18, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp18);
+		Employee emp19 = new Employee(19, "Harish", "kumar", 100000, 10000);
+		out.writeObject(emp19);
+		System.out.println("Data Serilised SuccessFuly");
+		
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream(fileName));
+		
+		Employee em11 = (Employee) in.readObject();
+		System.out.println(em11.id + " "+ em11.firstName + " "+ em11.lastName + " "+ em11.salary + " "+ em11.premium);
+		Employee em1121 = (Employee) in.readObject();
+		System.out.println(em1121.id + " "+ em1121.firstName + " "+ em1121.lastName + " "+ em1121.salary + " "+ em1121.premium);
+		Employee em12 = (Employee) in.readObject();
+		System.out.println(em12.id + " "+ em12.firstName + " "+ em12.lastName + " "+ em12.salary + " "+ em12.premium);
+		Employee em13 = (Employee) in.readObject();
+		System.out.println(em13.id + " "+ em13.firstName + " "+ em13.lastName + " "+ em13.salary + " "+ em13.premium);
+		Employee em14 = (Employee) in.readObject();
+		System.out.println(em14.id + " "+ em14.firstName + " "+ em14.lastName + " "+ em14.salary + " "+ em14.premium);
+		Employee em15 = (Employee) in.readObject();
+		System.out.println(em15.id + " "+ em15.firstName + " "+ em15.lastName + " "+ em15.salary + " "+ em15.premium);
+		Employee em16 = (Employee) in.readObject();
+		System.out.println(em16.id + " "+ em16.firstName + " "+ em16.lastName + " "+ em16.salary + " "+ em16.premium);
+		Employee em17 = (Employee) in.readObject();
+		System.out.println(em17.id + " "+ em17.firstName + " "+ em17.lastName + " "+ em17.salary + " "+ em17.premium);
+		Employee em18 = (Employee) in.readObject();
+		System.out.println(em18.id + " "+ em18.firstName + " "+ em18.lastName + " "+ em18.salary + " "+ em18.premium);
+		Employee em19 = (Employee) in.readObject();
+		System.out.println(em19.id + " "+ em19.firstName + " "+ em19.lastName + " "+ em19.salary + " "+ em19.premium);
+		Employee em111 = (Employee) in.readObject();
+		System.out.println(em111.id + " "+ em111.firstName + " "+ em111.lastName + " "+ em111.salary + " "+ em111.premium);
+		Employee em112 = (Employee) in.readObject();
+		System.out.println(em112.id + " "+ em112.firstName + " "+ em112.lastName + " "+ em112.salary + " "+ em112.premium);
+		Employee em113 = (Employee) in.readObject();
+		System.out.println(em113.id + " "+ em113.firstName + " "+ em113.lastName + " "+ em113.salary + " "+ em113.premium);
+		Employee em114 = (Employee) in.readObject();
+		System.out.println(em114.id + " "+ em114.firstName + " "+ em114.lastName + " "+ em114.salary + " "+ em114.premium);
+		Employee em115 = (Employee) in.readObject();
+		System.out.println(em115.id + " "+ em115.firstName + " "+ em115.lastName + " "+ em115.salary + " "+ em115.premium);
+		Employee em116 = (Employee) in.readObject();
+		System.out.println(em116.id + " "+ em116.firstName + " "+ em116.lastName + " "+ em116.salary + " "+ em116.premium);
+		Employee em117 = (Employee) in.readObject();
+		System.out.println(em117.id + " "+ em117.firstName + " "+ em117.lastName + " "+ em117.salary + " "+ em117.premium);
+		Employee em118 = (Employee) in.readObject();
+		System.out.println(em118.id + " "+ em118.firstName + " "+ em118.lastName + " "+ em118.salary + " "+ em118.premium);
+		Employee em119 = (Employee) in.readObject();
+		System.out.println(em11.id + " "+ em119.firstName + " "+ em119.lastName + " "+ em119.salary + " "+ em119.premium);
+		Employee em1111 = (Employee) in.readObject();
+//		System.out.println(em1111.id + " "+ em1111.firstName + " "+ em1111.lastName + " "+ em1111.salary + " "+ em1111.premium);
+		
+	}
+
+}

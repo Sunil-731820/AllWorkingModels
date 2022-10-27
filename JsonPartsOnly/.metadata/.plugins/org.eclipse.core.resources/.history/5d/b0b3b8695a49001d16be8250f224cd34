@@ -1,0 +1,48 @@
+package com.java.json;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.ArrayList;
+
+class Employ implements Serializable{
+	private String id;
+	private String firstName;
+	private String lastName;
+	public Employ(String id, String firstName, String lastName) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	@Override
+	public String toString() {
+		return "Employ [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+	}
+	
+	
+	
+	
+}
+
+public class SerilizeArrayList {
+	public static void main(String[] args) throws IOException {
+		ArrayList<Employ> employees = new ArrayList<Employ>();
+		employees.add(new Employ("1", "Sunil", "Kumar"));
+		employees.add(new Employ("2", "Harish", "Kumar"));
+		employees.add(new Employ("3", "Abhisek","Sarangi"));
+		try {
+			FileOutputStream fos = new FileOutputStream("C:\\Users\\sunilg\\Desktop\\FileRelatedParts\\SerilizationOfEmploy.txt");
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			oos.writeObject(employees);
+			oos.close();
+			fos.close();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+	}
+
+}
