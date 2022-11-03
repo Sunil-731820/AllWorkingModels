@@ -25,19 +25,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.java.jsf"/>
-			<item value="com.java.boot"/>
-			<item value="com.java.jsp"/>
-			<item value="com.crud.js"/>
+			<item value="com.java.console"/>
+			<item value="com.java.hib"/>
 		</list>
 		<list key="groupId">
 			<item value="Infinite"/>
 		</list>
 		<list key="artifactId">
-			<item value="JSFPracticeUsingJavaAndDatabaseOfEmploy"/>
-			<item value="RestAPIUsingHibernatesAndSpringBoot"/>
-			<item value="CodeSnippetSystemUsingJSPAndSQLAndHTMLAndJS"/>
-			<item value="CRUDOperationaUsingJS"/>
+			<item value="LeaveManagementSystemForConsoleApplication"/>
+			<item value="LeaveManagementSystemUsingHibernateAndJSPAndJSTLTags"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -73,5 +69,18 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\sunilg\eclipse-workspace11\LeaveProjectHib\LeaveProjectHibWeb"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>
